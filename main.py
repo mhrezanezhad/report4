@@ -7,7 +7,8 @@ import time
 
 start_time = time.time()
 board = boards.easy1 # you can change the board
-graphics.draw_background(board)
+delay = .01 # second
+graphics.draw_background(board , delay)
 pygame.display.flip()
 
 # (board, use forward checking filter, use pruning filter, use MLV ordering)
